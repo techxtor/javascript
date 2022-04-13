@@ -1,0 +1,8 @@
+If we need to run a loop and have every iteration in that loop await a Promise -> don't use foreach/map
+    as it won't pause the function, instead it runs all the Promises concurrently
+    use for loop instead
+
+We can use await keyword directly in loops
+    for await (const element of elements){
+
+    }
